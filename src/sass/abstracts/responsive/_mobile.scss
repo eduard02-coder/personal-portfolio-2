@@ -1,0 +1,13 @@
+@use 'sass:math';
+
+@use '../../components/' as comp;
+@use '../../base/' as *;
+@use '../../layout/' as lay;
+
+@use '../mixins' as *;
+@use '../icomoon' as *;
+
+@use 'desktop' as *;
+
+@mixin mobile {
+}

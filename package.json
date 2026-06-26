@@ -1,0 +1,17 @@
+{
+  "name": "pesonal-portfolio-2",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --base=./",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^8.0.12"
+  },
+  "dependencies": {
+    "sass": "^1.101.0"
+  }
+}

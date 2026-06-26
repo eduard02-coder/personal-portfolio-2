@@ -1,0 +1,32 @@
+@use '../abstracts/functions' as *;
+@use '../abstracts/mixins' as *;
+@use '../base' as *;
+
+@mixin -button-common($f-size: $base-font-size) {
+  font-family: inherit;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: $button-text-color;
+  line-height: 28px;
+  font-size: $f-size;
+
+  cursor: pointer;
+  width: fit-content;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0px;
+  position: relative;
+  display: block;
+  padding: em(10px, $base-font-size) em(22px, $base-font-size);
+
+  &:hover {
+    @include transition;
+    color: $button-text-color;
+    background-color: $link-hover-shadow-color;
+  }
+}
+
+@mixin button-1($font-size: $base-font-size) {
+  @include -button-common($font-size);
+  background-color: $black;
+}
